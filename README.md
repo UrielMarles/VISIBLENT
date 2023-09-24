@@ -12,6 +12,6 @@ The game's gimmick is that you need to complete each level twice, but the second
 
 ---
 ### Links
-- [Link to my linkedin](https://www.tinkercad.com/things/1lhiMsgpw3g-urielmarlesparcial2/editel?sharecode=3FgeZg1o49HyM2X8le240eNVXbdCXSU94oSwAiaKVVg).
+- [Link to my linkedin]([https://www.tinkercad.com/things/1lhiMsgpw3g-urielmarlesparcial2/editel?sharecode=3FgeZg1o49HyM2X8le240eNVXbdCXSU94oSwAiaKVVg](https://www.linkedin.com/in/uriel-nicolas-marles/)https://www.linkedin.com/in/uriel-nicolas-marles/).
 ---
 
