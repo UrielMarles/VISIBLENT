@@ -1,5 +1,5 @@
 # VISIBLENT
-![Tinkercad](./sprites/MENUS/TITULO.png)
+![Logo](./sprites/MENUS/TITULO.png)
 
 
 ## :innocent: Creator
