@@ -14,6 +14,6 @@ To run the game you either need pygame or download the compiled version. For lin
 ---
 ### Links
 - [WINDOWS EXE DOWNLOAD](https://drive.google.com/file/d/19DEeD3Fr4r_EWTznag0jlB5OVm2W3xt6/view?usp=sharing).
-- - [LINUX CODE DOWNLOAD](https://drive.google.com/file/d/1WuTlXLBZeJv2GxccWpLanNZYMIynfxoG/view?usp=sharing).
+- [LINUX CODE DOWNLOAD](https://drive.google.com/file/d/1WuTlXLBZeJv2GxccWpLanNZYMIynfxoG/view?usp=sharing).
 ---
 
