@@ -8,9 +8,9 @@
 ---
 ---
 ### How to start game 
-1 - Clone the git repository with *git clone https://github.com/UrielMarles/VISIBLENT.git*
-2 - Make sure you have Pygame Installed
-3 - start the game with  the command *py main.py*
+1 - Clone the git repository with *git clone https://github.com/UrielMarles/VISIBLENT.git* <br />
+2 - Make sure you have Pygame Installed <br />
+3 - start the game with  the command *py main.py* <br />
 ---
 
 ## :innocent: Creator
@@ -18,7 +18,7 @@
 
 
 ## :sunglasses: Objective of the game
-The game's gimmick is that you need to complete each level twice, but the second time all obstacles are invisible.
+The game's gimmick is that you need to complete each level twice, but the second time all obstacles are invisible. All the games sprites were drawn by myself and the sound effects were recorded with my voice, the leaderboard is stored locally and will remember whenever you set a new record.
 To run the game you either need pygame or download the compiled version. For linux there is no compiled version but there's a pygame for linux code
 
 
