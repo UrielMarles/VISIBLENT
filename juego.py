@@ -110,12 +110,12 @@ class Juego():
         self.boton_lvl5 = Boton((120,600),(150,150),WHITE,72,"5",True)
         self.boton_lvl6 = Boton((390,600),(150,150),WHITE,72,"6",True)
         self.boton_lvl7 = Boton((660,600),(150,150),WHITE,72,"7",True)
-        self.boton_lvl8 = Boton((930,600),(150,150),WHITE,72,"8",True)
-        self.boton_lvl9 = Boton((120,800),(150,150),WHITE,72,"9",True)
-        self.boton_lvl10 = Boton((390,800),(150,150),WHITE,72,"10",True)
-        self.boton_lvl11 = Boton((660,800),(150,150),WHITE,72,"11",True)
-        self.boton_lvl12 = Boton((930,800),(150,150),WHITE,72,"12",True)
-        self.total_blit_menu_niveles = [self.titulo_menu,self.boton_lvl1,self.boton_lvl2,self.boton_lvl3,self.boton_lvl4,self.flecha_atras,self.boton_lvl5,self.boton_lvl6,self.boton_lvl7,self.boton_lvl8,self.boton_lvl9,self.boton_lvl10,self.boton_lvl11,self.boton_lvl12]
+        # self.boton_lvl8 = Boton((930,600),(150,150),WHITE,72,"8",True)
+        # self.boton_lvl9 = Boton((120,800),(150,150),WHITE,72,"9",True)
+        # self.boton_lvl10 = Boton((390,800),(150,150),WHITE,72,"10",True)
+        # self.boton_lvl11 = Boton((660,800),(150,150),WHITE,72,"11",True)
+        # self.boton_lvl12 = Boton((930,800),(150,150),WHITE,72,"12",True)
+        self.total_blit_menu_niveles = [self.titulo_menu,self.boton_lvl1,self.boton_lvl2,self.boton_lvl3,self.boton_lvl4,self.flecha_atras,self.boton_lvl5,self.boton_lvl6,self.boton_lvl7]
 
     def __objetos_pantalla_nombre(self):
         self.nombre_fondo = Boton((200,675),(800,450),PURPLE,10," ",True)
@@ -235,16 +235,21 @@ class Juego():
             self.__cargar_nivel_segun_indice(indice)
 
     def __cargar_nivel_segun_indice(self,indice):
-        self.screen.blit(self.pantalla_carga.image,self.pantalla_carga.rect)
-        pygame.display.flip()
-        self.en_lvl = True
-        self.eligiendo_lvl = False
-        self.en_pantalla_victoria = False
-        self.ultimo = "lvl"
-        infoLevel = abrirNiveldeJson("data\lista_niveles.json",indice)
-        self.indice = indice
-        self.numero_nivel = indice + 1
-        self.lvl = Nivel(infoLevel,self.screen,self)
+        if (indice < 7):
+            self.screen.blit(self.pantalla_carga.image,self.pantalla_carga.rect)
+            pygame.display.flip()
+            self.en_lvl = True
+            self.eligiendo_lvl = False
+            self.en_pantalla_victoria = False
+            self.ultimo = "lvl"
+            infoLevel = abrirNiveldeJson("data\lista_niveles.json",indice)
+            self.indice = indice
+            self.numero_nivel = indice + 1
+            self.lvl = Nivel(infoLevel,self.screen,self)
+        else:
+            self.eligiendo_lvl = True
+            self.en_pantalla_victoria = False
+            self.ultimo = "menu_lvl"
 
     def __actualizar_puntuaciones_nivel(self):
         numeroSegundos = self.lvl.cronometro.segundos_totales
@@ -314,11 +319,11 @@ class Juego():
         self.__verificar_y_cargar_si_se_apreto(self.boton_lvl5,4)
         self.__verificar_y_cargar_si_se_apreto(self.boton_lvl6,5)
         self.__verificar_y_cargar_si_se_apreto(self.boton_lvl7,6)
-        self.__verificar_y_cargar_si_se_apreto(self.boton_lvl8,7)
-        self.__verificar_y_cargar_si_se_apreto(self.boton_lvl9,8)
-        self.__verificar_y_cargar_si_se_apreto(self.boton_lvl10,9)
-        self.__verificar_y_cargar_si_se_apreto(self.boton_lvl11,10)
-        self.__verificar_y_cargar_si_se_apreto(self.boton_lvl12,11)
+        # self.__verificar_y_cargar_si_se_apreto(self.boton_lvl8,7)
+        # self.__verificar_y_cargar_si_se_apreto(self.boton_lvl9,8)
+        # self.__verificar_y_cargar_si_se_apreto(self.boton_lvl10,9)
+        # self.__verificar_y_cargar_si_se_apreto(self.boton_lvl11,10)
+        # self.__verificar_y_cargar_si_se_apreto(self.boton_lvl12,11)
 
     def __menu_inicio(self):
         ## logica del menu
